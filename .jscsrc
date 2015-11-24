@@ -1,0 +1,8 @@
+{
+	"preset": "google",
+	"disallowMultipleVarDecl": null,
+	"maximumLineLength": 140,
+	"excludeFiles": [
+	"**/node_modules/**"
+	]
+}
