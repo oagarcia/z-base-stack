@@ -71,7 +71,6 @@ html, body {
   background-color: $COLOR_PRIMARY_BACKGROUND;
   color: $COLOR_PRIMARY_TEXT;
   font-family: 'brandon-grotesque', sans-serif;
-  background-image: url(../assets/images/background-right.jpg);
   background-size: 500px;
   background-position: top right;
   background-repeat: no-repeat;
@@ -81,6 +80,10 @@ html, body {
   }
 }
 
+.main{
+  font-size: 16rem;
+}
+
 .container{
   max-width: 1100px;
   // min-width: 570px;
@@ -88,7 +91,6 @@ html, body {
   background: none;
   
   @media #{$desktop} {
-    background-image: url(../assets/images/background-left.png);
     background-image: auto;
     background-position: top left;
     background-repeat: no-repeat;
