@@ -237,8 +237,8 @@ gulp.task('reload-templates', ['templates'], function() {
 gulp.task('clean', tasks.clean);
 // for production we require the clean method on every individual task
 //@TODO: Check why clean is not working for other tasks
-//var req = build ? ['clean'] : [];
-var req = build ? [] : [];
+var req = build ? ['clean'] : [];
+//var req = build ? [] : [];
 // individual tasks
 gulp.task('templates', req, tasks.templates);
 gulp.task('assets', req, tasks.assets);
