@@ -70,7 +70,7 @@ var tasks = {
   // Delete build folder
   // --------------------------
   clean: function(cb) {
-    del(['build/'], cb);
+    del(['build/*'], cb);
   },
 
   /**

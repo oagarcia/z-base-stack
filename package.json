@@ -1,7 +1,7 @@
 {
-  "name": "fluid-fashiondrop",
+  "name": "Z-basic-stack",
   "version": "1.0.0",
-  "description": "Fluid fashion Drop project",
+  "description": "Basic stack for projects that rely on SASS, Browserify, Modernizr, Handlebars, jQuery",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
