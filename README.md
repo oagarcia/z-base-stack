@@ -17,8 +17,8 @@ $ npm i -g gulp
 ```
 
 ```sh
-$ git clone https://github.com/FluidInc/tme-fashiondrop
-$ cd tme-fashiondrop
+$ git clone https://github.com/oagarcia/z-base-stack
+$ cd z-base-stack
 $ npm i
 $ gulp
 ```
