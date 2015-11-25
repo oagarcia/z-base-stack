@@ -22,6 +22,7 @@ var browserSync = require('browser-sync');
 // js
 var watchify = require('watchify');
 var browserify = require('browserify');
+var runSequence = require('run-sequence');
 var source = require('vinyl-source-stream');
 // image optimization
 var imagemin = require('gulp-imagemin');
@@ -236,9 +237,8 @@ gulp.task('reload-templates', ['templates'], function() {
 // --------------------------
 gulp.task('clean', tasks.clean);
 // for production we require the clean method on every individual task
-//@TODO: Check why clean is not working for other tasks
 var req = build ? ['clean'] : [];
-//var req = build ? [] : [];
+
 // individual tasks
 gulp.task('templates', req, tasks.templates);
 gulp.task('assets', req, tasks.assets);
@@ -250,10 +250,13 @@ gulp.task('jscs:js', tasks.jscs);
 gulp.task('optimize', tasks.optimize);
 gulp.task('test', tasks.test);
 
+
 // --------------------------
 // DEV/WATCH TASK
 // --------------------------
-gulp.task('watch', ['assets', 'templates', 'modernizr', 'sass', 'browserify', 'browser-sync'], function() {
+gulp.task('watch', function() {
+
+  runSequence('assets', 'templates', 'modernizr', 'sass', 'browserify', ['browser-sync']);
 
   // --------------------------
   // watch:sass
