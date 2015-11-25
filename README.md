@@ -3,10 +3,17 @@ Project setup stack: SASS+Browserify+jQuery+Handlebars
 
 ### Installation
 
+Project dependencies:
+
+* [node.js] - evented I/O for the backend
+* [npm] - npm is the package manager for nodejs modules
+* [Gulp] - the streaming build system
+
+
 You need Gulp installed globally:
 
 ```sh
-$ npm i -g gulp-cli
+$ npm i -g gulp
 ```
 
 ```sh
